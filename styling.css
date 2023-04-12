@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.profileHeader{
+    text-align: center;
+    font-size: 60px;
+}
+
+title{
+  background-color: #19A7CE;
+  font-family:'Chivo Mono';
+  font-weight: bold;
+}
+
+body {
+    background-color: #F6F1F1;
+  }
+
+  form{
+    background-color: #19A7CE;
+    font-family:'Chivo Mono';
+    font-weight: bold;
+  }
+
+  #resetButton,#filterButton{
+    font-family:'Chivo Mono';
+    font-weight: bold;
+  }
+
+  .listOfProfiles{
+    display: flex;
+    flex-wrap: wrap;
+    width:90%;
+    padding: 20px;
+    gap: 10px;
+
+    flex-direction:row;
+    justify-content:center
+
+  
+
+  }
+
+  .listOfProfiles >li{
+    flex: 1 1 auto; 
+    
+  cursor: pointer;
+  position: relative;
+  }
+
+  .listOfProfiles::after {
+    content: "";
+    flex-grow: 999;
+  }
+
+  .profilePicture img{
+
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .listOfProfiles li:hover .overlay{
+    transform: scale(1.3);
+    z-index:2;
+  }
+
+  .profilePicture{
+    width: 300px;
+    margin: 0 10px;
+    box-shadow:0 0 20px 2px rgba(0,0,0,.1);
+    transition:1s;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #146C94;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    border-radius: 5px;
+    /* center overlay content */
+    display: flex;
+    align-items:top;
+    justify-content: center;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+    font-family:'Chivo Mono';
+    font-weight: bold;
+  }
+
+
+  .overlay img{
+    height: auto;
+    width: 100%;
+  }
+
+  .overlay p{
+    padding-top: 5px;
+    font-size:15px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  
+ .pagination-container{
+    display:flex;
+    align-items:center;
+    bottom: 0;
+    padding: 1rem 0;
+    justify-content: center;
+ }
+
+ .pagination-number,.pagination-button{
+    font-size: 1.1rem;
+    background-color: transparent;
+    border:none;
+    margin: 0.25rem 0.25rem;
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: .2rem;
+ }
+
+ .pagination-number:hover,.pagination-button:not(.disabled):hover{
+    background: #fff;
+ }
+
+ .pagination-number.active{
+    color: #fff;
+    background: #0085b6;
+ }
+
+  

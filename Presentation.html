@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <link rel="stylesheet" href="styling.css"> 
+
+
+    <head>
+        <meta charset="utf-8">
+        <title>Secret profiles</title>
+        <form id="numberform">
+            <h2>Filters</h2>
+            <p>Filter for age:</p>
+            <br>
+            <label for="minAgeField">Persons min age:</label><br>
+            <input type="number" id="minAgeField"><br>
+            <label for="maxAgeField">Persons max age:</label><br>
+            <input type="number" id="maxAgeField">
+            
+        </form>
+        <input type="radio" id="filterButton">
+        <label for="filterButton">Toggle filters</label>
+        <button id="resetButton">Reset filters</button>
+
+    </head>
+<body>
+    
+
+
+    <div class="container">
+        <h2 class="profileHeader">Secret profiles</h2>
+        <ul id="listOfProfiles" class="listOfProfiles" aria-live="polite">
+
+        </ul>
+</div>
+<main>
+
+    <nav class="pagination-container">
+        <button class="pagination-button" id="prev-button" title="previous page" aria-label="Previous page">
+            &lt;
+        </button>
+        <div id="pagination-numbers">
+    
+        </div>
+        <button class="pagination-button" id="next-button" title="next page" aria-label="Next page">
+            &gt;
+        </button>
+    </nav>
+
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="GalleryScript.js"></script>
+</body>
+<footer><p>Author: Viktor Bernås Östrand</p></footer>
+</html>
